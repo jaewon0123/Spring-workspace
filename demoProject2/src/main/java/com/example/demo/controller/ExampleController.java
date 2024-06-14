@@ -134,4 +134,47 @@ public class ExampleController {
 		
 		return "example/ex3";
 	}
+	
+	@GetMapping("ex4")
+	public String ex4(Model model) {
+		//아직 std로 전달해준 값이 없기 때문에 th:unless 안에 작성해준
+		// std 없음이 뜨는 것이 정상
+		
+		StudentDTO std = new StudentDTO("7890","피카츄", 22);
+		model.addAttribute("std",std);
+		
+		// 1234 둘리 33
+		MemberDTO mem = new MemberDTO("1234","둘리",33);
+		model.addAttribute("mem",mem);
+		
+		model.addAttribute("testIf","테스트중");
+		
+		
+		
+		return "example/ex4";
+	}
+	
+	@GetMapping("ex5")
+	public String ex5(Model model) {
+		
+		model.addAttribute("message","타임리프 + 자바스크립트 사용 예제");
+		
+		//std로 어떤 값을 저장해서 전달해준 것이 없음
+		
+		StudentDTO std = new StudentDTO();
+		std.setStudentNo("2222");
+		std.setName("홍길동");
+		
+		model.addAttribute("std",std);
+	
+		MemberDTO mem = new MemberDTO();
+		mem.setMemberAge(15);
+		mem.setMemberName("동그라미");
+		mem.setMemberNo("333");
+		
+		model.addAttribute("mem",mem);
+		
+		return "example/ex5";
+	}
+	
 }
