@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- id 값을 insertMember 로 작성했따면
+	Java 파일에서 Mapper Service Controller 모두 insertMember 로 통일
+	통일을 안해도 되긴 하지만 Spring Boot는 @(어노테이션)과 properties에 작성한
+	작성경로를 통해 임의적으로 이동하기 때문에 이름이 다를 경우에는 파일의 위치를 찾지 못하거나
+	실행이 안될 수 있음
+ -->
+ 
