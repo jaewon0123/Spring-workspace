@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>회원가입하기</title>
+</head>
+<body>
+	<h1>회원가입</h1>
+	<form th:action="@{/register-member}" method="post" th:object="${Khmember}">
+		이름 : <input type="text" th:field="*{username}"> <br>
+		비밀번호 : <input type="text" th:field="*{password}"><br>
+		이메일 : <input type="text" th:field="*{email}"><br>
+		<button>회원가입</button>
+	</form>
+</body>
+</html>

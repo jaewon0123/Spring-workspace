@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+        <!-- 폴더명이 example 이기 때문에 com.example 로 시작 -->
+<mapper namespace="com.example.mapper.CompanyMapper">
+
+	<select id="getallCompany" resultType="com.example.dto.Company">
+		SELECT * FROM company
+	</select>
+
+</mapper>
