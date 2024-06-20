@@ -28,6 +28,7 @@ img {
 			<tr>
 				<th>이미지</th>
 				<th>이름</th>
+				<th>상세페이지로 이동하기</th>
 			<tr>
 		</thead>
 		<tbody>
@@ -37,6 +38,9 @@ img {
 					<img  th:src="@{${p.pig_image_path}}" >
 				</td>
 				<td  th:text="${p.pig_name}"> </td>
+				<td>
+					<a th:href="@{'/pigDetail/' + ${p.pig_id}}">이동하기</a>
+				</td>
 			</tr>
 		
 		</tbody>
