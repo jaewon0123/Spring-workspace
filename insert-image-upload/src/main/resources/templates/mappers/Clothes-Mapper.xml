@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.khmall.mapper.Clothes-Mapper">
+	<insert id="imgupload" parameterType="com.khmall.dto.Clothes">
+		INSERT INTO clothes (name, price, category, image_path) 
+		VALUES (#{name}, #{price}, #{category}, #{image_path});
+	</insert>
+</mapper>
