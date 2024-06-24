@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="EUC-KR">
-<title>Insert title here</title>
+<meta charset="utf-8">
+<title>옷가게</title>
 </head>
 <body>
-
+	<h1>옷 가게</h1>
+	
+	<table>
+		<thead>
+			<tr>
+				<th>이미지</th>
+				<th>옷 이름</th>
+				<th>옷 종류</th>
+				<th>옷 가격</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each=" c : ${clothes}">
+				<td th:src="@{${"
+			</tr>
+		</tbody>
+	</table>
 </body>
 </html>
